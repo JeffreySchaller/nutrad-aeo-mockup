@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nutrād · AEO Hero CTA Mockup</title>
+<meta name="description" content="nutrād turns fragmented ERP, spreadsheet, PIM, DAM, supplier, and channel data into governed, AI-enriched, commercially executable product records — ready for every retailer, distributor, marketplace, and trading partner.">
+<link rel="canonical" href="https://nutrad.com/">
+<base href="https://nutrad.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="nutrād">
+<meta property="og:url" content="https://nutrad.com/">
+<meta property="og:title" content="Is your product data clean?">
+<meta property="og:description" content="Most product data shows up to commerce a mess. nutrād is the soap. 100 SKUs. 48 hours. No commitment.">
+<meta property="og:image" content="https://nutrad.com/assets/images/og-image-soap.png">
+<meta property="og:image:secure_url" content="https://nutrad.com/assets/images/og-image-soap.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A pink bar of nutrād soap surrounded by suds, asking: is your product data clean?">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Is your product data clean?">
+<meta name="twitter:description" content="Most product data shows up to commerce a mess. nutrād is the soap. 100 SKUs. 48 hours. No commitment.">
+<meta name="twitter:image" content="https://nutrad.com/assets/images/og-image-soap-twitter.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#092c66;--navy2:#0d3275;--navy3:#102f80;
+  --teal:#217ec3;--teal2:#2e8fd4;--teal-dark:#1a6aaa;
+  --teal-light:rgba(33,126,195,0.1);
+  --white:#ffffff;--off-white:#f4f6f9;--gray-light:#eef0f4;
+  --gray:#e2e6ec;--gray-mid:#8a9ab0;--gray-dark:#4a5568;
+  --ink:#1a2840;--ink-soft:#2f3b52;
+  --text-dark-secondary:rgba(255,255,255,0.75);
+  --text-dark-muted:rgba(255,255,255,0.45);
+  --shadow-sm:0 2px 8px rgba(6,23,46,0.08);
+  --shadow-md:0 4px 20px rgba(6,23,46,0.12);
+  --shadow-lg:0 8px 40px rgba(6,23,46,0.18);
+  --shadow-teal:0 4px 20px rgba(33,126,195,0.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--white);color:var(--ink);font-weight:400;line-height:1.6;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+strong{font-weight:800;color:inherit;}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px;background:var(--white);border-bottom:1px solid var(--gray);display:flex;align-items:center;padding:0 40px;box-shadow:var(--shadow-sm);}
+.nav-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:32px;}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;transition:opacity .2s;}
+.nav-logo:hover{opacity:0.85;}
+.nav-logo img{height:30px;width:auto;}
+.nav-logo-text{font-size:1.3rem;font-weight:800;letter-spacing:-.03em;color:var(--navy);}
+.nav-logo-text span{color:var(--teal);}
+.nav-links{display:flex;align-items:center;gap:28px;flex:1;justify-content:flex-end;}
+.nav-link{font-size:14px;font-weight:500;color:var(--gray-dark);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nav-link:hover,.nav-link.active{color:var(--navy);font-weight:700;}
+.nav-cta{background:var(--teal);color:var(--white);font-size:13px;font-weight:600;padding:10px 22px;border-radius:50px;text-decoration:none;letter-spacing:.02em;transition:all .2s;white-space:nowrap;box-shadow:var(--shadow-teal);}
+.nav-cta:hover{background:var(--teal-dark);transform:translateY(-1px);}
+
+/* HERO */
+.hero{min-height:100vh;background:#00071b url("assets/images/nutrad Hero Image data fabric.png") center center/cover no-repeat;position:relative;display:flex;align-items:center;overflow:hidden;padding:130px 40px 78px;}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,23,46,.98) 0%,rgba(6,23,46,.86) 34%,rgba(6,23,46,.34) 58%,rgba(6,23,46,0) 100%);pointer-events:none;z-index:0;}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,23,46,.08) 0%,rgba(6,23,46,0) 52%,rgba(6,23,46,.12) 100%);z-index:1;pointer-events:none;}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);gap:56px;align-items:center;}
+.hero-accent{width:48px;height:3px;background:var(--teal);margin-bottom:28px;opacity:0;animation:slideIn .6s ease .1s forwards;}
+.hero-label{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal2);margin-bottom:18px;opacity:0;animation:fadeUp .6s ease .2s forwards;}
+.hero-title{font-size:clamp(36px,4.6vw,60px);font-weight:800;line-height:1.08;color:var(--white);max-width:780px;margin-bottom:24px;opacity:0;animation:fadeUp .7s ease .3s forwards;letter-spacing:-.045em;}
+.hero-title .teal{color:var(--teal2);}
+.hero-sub{font-size:18px;font-weight:400;color:var(--text-dark-secondary);max-width:660px;line-height:1.75;margin-bottom:32px;opacity:0;animation:fadeUp .7s ease .4s forwards;}
+.hero-cta-row{display:flex;gap:14px;align-items:center;opacity:0;animation:fadeUp .6s ease .55s forwards;flex-wrap:wrap;margin-bottom:18px;}
+.btn-primary{background:var(--teal);color:var(--white);font-size:14px;font-weight:700;padding:13px 28px;border-radius:50px;text-decoration:none;letter-spacing:.02em;transition:all .2s;box-shadow:var(--shadow-teal);white-space:nowrap;display:inline-block;border:none;cursor:pointer;}
+.btn-primary:hover{background:var(--teal-dark);transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:rgba(255,255,255,.78);font-size:14px;font-weight:600;padding:13px 24px;border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,.22);transition:all .2s;white-space:nowrap;}
+.btn-ghost:hover{color:var(--white);border-color:rgba(255,255,255,.52);background:rgba(255,255,255,.06);}
+.btn-outline-dark{background:transparent;color:var(--navy);font-size:13px;font-weight:700;padding:11px 22px;border-radius:50px;text-decoration:none;border:2px solid var(--navy);transition:all .2s;display:inline-block;}
+.btn-outline-dark:hover{background:var(--navy);color:var(--white);}
+.btn-link{font-size:13px;font-weight:700;color:var(--teal);display:inline-flex;align-items:center;gap:6px;transition:gap .2s;}
+.btn-link:hover{gap:10px;}
+.audit-proof{font-size:12px;color:rgba(255,255,255,.52);opacity:0;animation:fadeUp .6s ease .68s forwards;}
+.audit-proof strong{color:var(--white);font-weight:700;}
+
+/* === AEO HERO CTA MOCKUP ADDITIONS === */
+.btn-aeo{background:#DE7350;color:var(--white);font-size:14px;font-weight:700;padding:13px 28px;border-radius:50px;letter-spacing:.02em;transition:all .2s;box-shadow:0 4px 20px rgba(222,115,80,.28);white-space:nowrap;display:inline-block;border:none;cursor:pointer;font-family:inherit;}
+.btn-aeo:hover{background:#C75F3D;transform:translateY(-1px);}
+.proof-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:8px;vertical-align:1px;}
+.dot-teal{background:var(--teal2);}
+.dot-coral{background:#E89077;}
+.aeo-proof-2{font-size:12px;color:rgba(255,255,255,.52);opacity:0;animation:fadeUp .6s ease .76s forwards;margin-top:7px;}
+.aeo-proof-2 strong{color:var(--white);font-weight:700;}
+.hero-quiet{display:inline-block;margin-top:16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);border-bottom:1px solid rgba(255,255,255,.22);padding-bottom:1px;opacity:0;animation:fadeUp .6s ease .88s forwards;transition:color .2s;}
+.hero-quiet:hover{color:var(--white);}
+.aeo-overlay{position:fixed;inset:0;background:rgba(6,23,46,.68);backdrop-filter:blur(5px);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;}
+.aeo-overlay.open{display:flex;}
+.aeo-modal{background:var(--white);border-radius:18px;max-width:480px;width:100%;padding:40px 42px 34px;box-shadow:0 30px 90px rgba(0,0,0,.35);position:relative;overflow:hidden;}
+.aeo-modal::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:#DE7350;}
+.aeo-close{position:absolute;top:14px;right:18px;background:none;border:none;font-size:26px;line-height:1;color:var(--gray-mid);cursor:pointer;}
+.aeo-close:hover{color:var(--navy);}
+.aeo-eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#DE7350;margin-bottom:10px;}
+.aeo-title{font-size:23px;font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.25;margin-bottom:10px;}
+.aeo-subtext{font-size:14px;color:var(--gray-dark);line-height:1.65;margin-bottom:18px;}
+.aeo-subtext strong{font-weight:700;color:var(--navy);}
+.aeo-field{margin-bottom:14px;}
+.aeo-field label{display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.aeo-field input{width:100%;padding:12px 14px;border:1px solid var(--gray);border-radius:10px;font-size:14px;font-family:inherit;color:var(--ink);outline:none;transition:border-color .2s;}
+.aeo-field input:focus{border-color:#DE7350;}
+.aeo-run{width:100%;background:#DE7350;color:#fff;border:none;border-radius:50px;padding:13px 24px;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer;transition:background .2s;margin-top:4px;}
+.aeo-run:hover{background:#C75F3D;}
+.aeo-fine{font-size:11px;color:var(--gray-mid);text-align:center;margin-top:14px;line-height:1.55;}
+.aeo-checks{border:1px solid var(--gray);border-radius:12px;padding:6px 18px;margin:16px 0 6px;}
+.aeo-check-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--gray);font-size:13.5px;}
+.aeo-check-row:last-child{border-bottom:none;}
+.aeo-check-name{font-weight:600;color:var(--ink);}
+.aeo-check-status{font-weight:700;color:var(--navy);font-size:13px;}
+.aeo-ok{display:inline-flex;width:18px;height:18px;border-radius:50%;background:rgba(33,126,195,.12);color:var(--teal-dark);font-size:11px;align-items:center;justify-content:center;margin-right:4px;vertical-align:-3px;}
+.aeo-spin{display:inline-block;width:14px;height:14px;border:2px solid var(--gray);border-top-color:#DE7350;border-radius:50%;animation:aeoSpin .7s linear infinite;}
+@keyframes aeoSpin{to{transform:rotate(360deg);}}
+.aeo-scale{margin:18px 0 22px;}
+.aeo-scale-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin-bottom:7px;}
+.aeo-scale-bar span{height:7px;border-radius:3px;background:#DE7350;display:block;}
+.aeo-scale-labels{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;font-size:9.5px;font-weight:700;color:var(--gray-mid);text-align:center;letter-spacing:.02em;}
+.mock-badge{position:fixed;bottom:18px;left:18px;z-index:3000;background:rgba(6,23,46,.92);color:#fff;border:1px solid #DE7350;border-radius:50px;padding:8px 16px;font-size:10.5px;font-weight:800;letter-spacing:.1em;}
+@media(max-width:520px){.btn-aeo{width:100%;text-align:center;}.aeo-modal{padding:32px 26px 28px;}}
+
+.hero-panel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px 22px;box-shadow:0 20px 70px rgba(0,0,0,.22);opacity:0;animation:fadeUp .7s ease .62s forwards;backdrop-filter:blur(8px);}
+.panel-label{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:12px;}
+.engine-visual{display:flex;flex-direction:column;gap:0;margin-bottom:12px;}
+.engine-boxes{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;}
+.engine-box{padding:9px 4px;text-align:center;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#fff;border-radius:3px 3px 0 0;}
+.engine-box.e-connect{background:#0d3275;}
+.engine-box.e-harmonize{background:#092c66;}
+.engine-box.e-execute{background:#071f52;}
+.engine-box.e-monitor{background:#06172e;}
+.engine-tie-bar{background:var(--teal);color:#fff;text-align:center;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:7px 8px;border-radius:0 0 3px 3px;}
+.fabric-flow{display:grid;grid-template-columns:1fr 28px 1.05fr 28px 1fr;align-items:center;gap:8px;margin:18px 0 14px;}
+.fabric-node{min-height:118px;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 12px;background:rgba(6,23,46,.38);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.fabric-node.primary{background:rgba(33,126,195,.16);border-color:rgba(46,143,212,.44);box-shadow:0 0 0 1px rgba(46,143,212,.08) inset;}
+.fabric-icon{font-size:22px;margin-bottom:8px;line-height:1;}
+.fabric-node-title{font-size:12px;font-weight:800;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;}
+.fabric-node-detail{font-size:10.5px;color:rgba(255,255,255,.62);line-height:1.35;}
+.fabric-arrow{height:2px;background:linear-gradient(90deg,rgba(46,143,212,.2),var(--teal2));position:relative;}
+.fabric-arrow::after{content:'';position:absolute;right:-1px;top:50%;width:8px;height:8px;border-right:2px solid var(--teal2);border-top:2px solid var(--teal2);transform:translateY(-50%) rotate(45deg);}
+.panel-result{background:rgba(33,126,195,.14);border:1px solid rgba(33,126,195,.28);border-radius:12px;padding:14px 16px;margin-top:14px;text-align:center;}
+.panel-result-title{font-size:12px;font-weight:800;color:#fff;margin-bottom:5px;letter-spacing:.08em;text-transform:uppercase;}
+.panel-result-body{font-size:12px;color:rgba(255,255,255,.72);line-height:1.48;}
+
+/* SECTIONS */
+.section{padding:84px 40px;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.cycle-image-section{padding:36px 40px;background:var(--white);}
+.cycle-image-title{font-size:clamp(28px,3.2vw,44px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-.03em;margin-bottom:10px;}
+.cycle-image-sub{font-size:15px;color:var(--gray-dark);line-height:1.65;max-width:760px;margin-bottom:20px;}
+.cycle-experience{display:grid;grid-template-columns:minmax(0,920px) 220px;gap:22px;align-items:start;justify-content:end;}
+.cycle-media{min-width:0;}
+.cycle-steps{display:grid;grid-template-columns:1fr;gap:10px;margin:0;}
+.cycle-step{border:1px solid var(--gray);background:var(--white);border-radius:8px;padding:12px 14px;text-align:left;cursor:pointer;transition:all .25s;font-family:inherit;}
+.cycle-step:hover{border-color:var(--teal);transform:translateY(-1px);}
+.cycle-step.active{background:var(--navy);border-color:var(--navy);box-shadow:var(--shadow-md);}
+.cycle-step-kicker{display:block;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;}
+.cycle-step-label{display:block;font-size:14px;font-weight:800;color:var(--navy);line-height:1.25;}
+.cycle-step.active .cycle-step-kicker{color:var(--teal2);}
+.cycle-step.active .cycle-step-label{color:var(--white);}
+.cycle-stage{position:relative;aspect-ratio:1672/920;border-radius:12px;overflow:hidden;background:var(--off-white);box-shadow:var(--shadow-lg);max-height:50vh;}
+.cycle-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;}
+.cycle-slide.active{opacity:1;z-index:2;}
+.cycle-image{display:block;width:100%;height:100%;object-fit:contain;}
+.cycle-caption-row{min-height:72px;margin-top:12px;}
+.cycle-caption{display:none;background:var(--off-white);border:1px solid var(--gray);border-radius:8px;padding:12px 14px;color:var(--ink);}
+.cycle-caption.active{display:block;}
+.cycle-caption strong{display:block;font-size:14px;margin-bottom:2px;color:var(--navy);}
+.cycle-caption span{display:block;font-size:13px;color:var(--gray-dark);line-height:1.5;}
+.section-eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;}
+.section-title{font-size:clamp(27px,3vw,42px);font-weight:800;color:var(--navy);line-height:1.18;letter-spacing:-.03em;margin-bottom:16px;}
+.section-title--light{color:var(--white);}
+.section-sub{font-size:16px;color:var(--gray-dark);line-height:1.75;max-width:650px;margin-bottom:48px;}
+.section-sub--light{color:rgba(255,255,255,.68);}
+.section-centered{text-align:center;}
+.section-centered .section-sub{margin-left:auto;margin-right:auto;}
+.section-white{background:var(--white);}
+.section-gray{background:var(--off-white);}
+.section-navy{background:var(--navy);}
+
+/* PROBLEM */
+.problem-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start;}
+.problem-statement{font-size:clamp(20px,2.2vw,29px);font-weight:800;color:var(--navy);line-height:1.38;border-left:4px solid var(--teal);padding-left:22px;letter-spacing:-.02em;margin-bottom:24px;}
+.problem-body{font-size:15px;color:var(--gray-dark);line-height:1.85;margin-bottom:18px;}
+.problem-cards{display:grid;grid-template-columns:1fr;gap:14px;}
+.problem-card{background:var(--white);border:1px solid var(--gray);border-radius:12px;padding:24px 26px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;}
+.problem-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:linear-gradient(var(--teal),var(--teal2));}
+.problem-card-title{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:7px;}
+.problem-card-body{font-size:13px;color:var(--gray-dark);line-height:1.65;}
+
+/* BENCHMARKS */
+.benchmark-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.08);}
+.benchmark-cell{background:var(--navy);padding:30px 28px;min-height:170px;transition:background .2s;}
+.benchmark-cell:hover{background:var(--navy2);}
+.benchmark-num{font-size:36px;font-weight:800;color:var(--teal2);line-height:1;margin-bottom:12px;letter-spacing:-.03em;}
+.benchmark-label{font-size:13px;color:rgba(255,255,255,.78);line-height:1.48;margin-bottom:10px;}
+.benchmark-source{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);font-weight:700;}
+
+/* ESTIMATED IMPACT */
+.impact-grid{display:grid;grid-template-columns:1fr 1.18fr 1fr 1fr;gap:16px;}
+.impact-card{background:var(--white);border:1px solid var(--gray);border-radius:12px;padding:30px 24px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:box-shadow .25s,transform .25s;}
+.impact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--teal2));}
+.impact-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.impact-num{font-size:clamp(34px,4vw,48px);font-weight:800;color:var(--navy);line-height:1;letter-spacing:-.04em;margin-bottom:12px;}
+.impact-label{font-size:14px;color:var(--gray-dark);line-height:1.55;}
+.impact-note{font-size:12px;color:var(--gray-mid);line-height:1.65;max-width:780px;margin:24px auto 0;text-align:center;}
+
+/* WHY NOT */
+.compare-wrap{display:grid;grid-template-columns:1fr 1.08fr;gap:56px;align-items:center;}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.compare-card{background:var(--white);border:1px solid var(--gray);border-radius:10px;padding:22px 20px;}
+.compare-card.highlight{background:var(--navy);grid-column:1/-1;border-color:var(--navy);box-shadow:var(--shadow-md);}
+.missing-layer-image{display:block;width:100%;margin-top:28px;border:1px solid var(--gray);border-radius:14px;box-shadow:var(--shadow-md);background:#fff;}
+.compare-label{font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;}
+.compare-title{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:6px;line-height:1.3;}
+.compare-desc{font-size:12px;color:var(--gray-dark);line-height:1.55;}
+.compare-card.highlight .compare-title{color:var(--white);font-size:17px;}
+.compare-card.highlight .compare-desc{color:rgba(255,255,255,.68);}
+
+/* FOUR PILLARS */
+.pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.pillar-card{background:var(--white);border:1px solid var(--gray);border-radius:12px;padding:30px 25px;transition:box-shadow .25s,transform .25s;position:relative;overflow:hidden;}
+.pillar-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--teal2));}
+.pillar-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);}
+.pillar-num{font-size:10px;font-weight:800;letter-spacing:.16em;color:var(--teal);text-transform:uppercase;margin-bottom:16px;}
+.pillar-icon{width:46px;height:46px;background:var(--teal-light);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px;}
+.pillar-title{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:10px;letter-spacing:-.02em;}
+.pillar-body{font-size:13px;color:var(--gray-dark);line-height:1.7;}
+
+/* ICP PATHWAYS */
+.icp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.icp-card{border-radius:14px;padding:38px 34px;border:1px solid var(--gray);position:relative;overflow:hidden;transition:box-shadow .25s,transform .25s;}
+.icp-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);}
+.icp-light{background:var(--white);border-top:4px solid var(--teal);}
+.icp-dark{background:var(--navy);border-top:4px solid var(--teal2);}
+.icp-mid{background:var(--off-white);border-top:4px solid var(--navy);}
+.icp-tag{font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin-bottom:14px;display:inline-block;padding:4px 10px;border-radius:50px;}
+.icp-light .icp-tag{background:var(--teal-light);color:var(--teal-dark);}
+.icp-dark .icp-tag{background:rgba(33,126,195,.17);color:var(--teal2);}
+.icp-mid .icp-tag{background:rgba(9,44,102,.08);color:var(--navy);}
+.icp-title{font-size:21px;font-weight:800;line-height:1.24;margin-bottom:10px;letter-spacing:-.02em;}
+.icp-light .icp-title,.icp-mid .icp-title{color:var(--navy);}
+.icp-dark .icp-title{color:var(--white);}
+.icp-persona{font-size:12px;margin-bottom:18px;font-style:italic;}
+.icp-light .icp-persona,.icp-mid .icp-persona{color:var(--gray-mid);}
+.icp-dark .icp-persona{color:rgba(255,255,255,.45);}
+.icp-body{font-size:14px;line-height:1.72;margin-bottom:24px;}
+.icp-light .icp-body,.icp-mid .icp-body{color:var(--gray-dark);}
+.icp-dark .icp-body{color:rgba(255,255,255,.72);}
+.icp-outcomes{list-style:none;margin-bottom:26px;}
+.icp-outcome{font-size:13px;padding:8px 0;display:flex;gap:10px;align-items:flex-start;line-height:1.5;}
+.icp-light .icp-outcome,.icp-mid .icp-outcome{color:var(--gray-dark);border-bottom:1px solid var(--gray);}
+.icp-dark .icp-outcome{color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.08);}
+.icp-outcome:last-child{border-bottom:none;}
+.icp-check{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;flex-shrink:0;margin-top:2px;}
+.icp-light .icp-check{background:var(--teal-light);color:var(--teal-dark);}
+.icp-dark .icp-check{background:rgba(33,126,195,.2);color:var(--teal2);}
+.icp-mid .icp-check{background:rgba(9,44,102,.1);color:var(--navy);}
+
+/* AUDIT */
+.audit-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.audit-title{font-size:clamp(27px,3vw,42px);font-weight:800;color:var(--navy);line-height:1.18;letter-spacing:-.03em;margin-bottom:16px;}
+.audit-body{font-size:16px;color:var(--gray-dark);line-height:1.75;margin-bottom:30px;}
+.audit-cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.audit-card{background:var(--white);border:1px solid var(--gray);border-radius:14px;padding:30px 32px;box-shadow:var(--shadow-md);}
+.audit-card-title{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:20px;}
+.audit-dim{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--gray);}
+.audit-dim:last-child{border-bottom:none;}
+.audit-dim-info{flex:1;}
+.audit-dim-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.audit-dim-bar{height:6px;background:var(--gray);border-radius:3px;overflow:hidden;}
+.audit-dim-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--teal2));border-radius:3px;transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.4,0,.2,1);}
+.audit-dim-fill.animated{transform:scaleX(1);}
+.audit-dim-score{font-size:16px;font-weight:800;color:var(--navy);min-width:42px;text-align:right;}
+.audit-note{margin-top:16px;font-size:11px;color:var(--gray-mid);text-align:center;font-style:italic;}
+
+/* CATEGORY */
+.category-box{max-width:890px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:44px 48px;text-align:left;}
+.category-definition{font-size:20px;font-weight:700;color:var(--white);line-height:1.55;margin-bottom:18px;letter-spacing:-.02em;}
+.category-copy{font-size:15px;color:rgba(255,255,255,.68);line-height:1.75;margin-bottom:28px;}
+.category-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.category-item{font-size:13px;color:rgba(255,255,255,.72);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:14px 16px;}
+.category-item strong{display:block;color:var(--teal2);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);padding:80px 40px;text-align:center;color:var(--white);}
+.final-cta-inner{max-width:760px;margin:0 auto;}
+.final-title{font-size:clamp(28px,3.5vw,46px);font-weight:800;line-height:1.12;letter-spacing:-.03em;margin-bottom:16px;}
+.final-body{font-size:16px;color:rgba(255,255,255,.68);line-height:1.75;margin-bottom:32px;}
+
+/* FOOTER */
+.footer{background:var(--navy);padding:64px 40px 32px;border-top:1px solid rgba(255,255,255,.08);}
+.footer-inner{max-width:1200px;margin:0 auto;display:block;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:32px;}
+.footer-logo-text{font-size:22px;font-weight:800;color:var(--white);letter-spacing:-.02em;margin-bottom:12px;display:block;}
+.footer-logo-text span{color:var(--teal2);}
+.footer-tagline{font-size:13px;color:rgba(255,255,255,.5);line-height:1.65;margin-bottom:24px;max-width:300px;}
+.footer-col-title{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:16px;}
+.footer-links{list-style:none;}
+.footer-link{padding:5px 0;font-size:13px;color:rgba(255,255,255,.6);cursor:pointer;transition:color .2s;display:block;text-decoration:none;}
+.footer-link:hover{color:var(--teal2);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-legal{font-size:12px;color:rgba(255,255,255,.3);}
+.footer-badge{font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);opacity:.7;}
+
+/* REVEALS */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.reveal-d1{transition-delay:.1s;}
+.reveal-d2{transition-delay:.2s;}
+.reveal-d3{transition-delay:.3s;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+@keyframes slideIn{from{opacity:0;width:0;}to{opacity:1;width:48px;}}
+
+@media(max-width:1080px){
+  .hero-inner,.problem-grid,.compare-wrap,.audit-wrap{grid-template-columns:1fr;gap:42px;}
+  .hero{min-height:auto;}
+  .hero-panel{max-width:680px;}
+  .cycle-experience{grid-template-columns:1fr;}
+  .cycle-steps{grid-template-columns:repeat(3,1fr);}
+  .cycle-stage{max-height:none;}
+  .benchmark-grid,.impact-grid,.pillars-grid{grid-template-columns:1fr 1fr;}
+  .icp-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .nav{padding:0 24px;}
+  .nav-links{display:none;}
+  .hero,.section,.cycle-image-section{padding-left:24px;padding-right:24px;}
+  .hero-title{font-size:clamp(36px,11vw,52px);}
+  .benchmark-grid,.impact-grid,.pillars-grid,.compare-grid,.category-list,.cycle-steps{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .category-box{padding:32px 26px;}
+}
+@media(max-width:520px){
+  .footer-top{grid-template-columns:1fr;}
+  .fabric-flow{grid-template-columns:1fr;gap:8px;}
+  .fabric-arrow{height:24px;width:2px;margin:0 auto;background:linear-gradient(180deg,rgba(46,143,212,.2),var(--teal2));}
+  .fabric-arrow::after{right:50%;top:auto;bottom:-1px;transform:translateX(50%) rotate(135deg);}
+  .hero-cta-row,.audit-cta-row{align-items:stretch;flex-direction:column;}
+  .btn-primary,.btn-ghost,.btn-outline-dark{text-align:center;}
+}
+
+/* CONSISTENT FOOTER */
+.footer{background:var(--navy);padding:64px 40px 32px;border-top:1px solid rgba(255,255,255,.08);}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:32px;}
+.footer-logo img{height:28px;width:auto;margin-bottom:12px;display:block;}
+.footer-tagline{font-size:13px;color:rgba(255,255,255,.5);line-height:1.65;margin-bottom:24px;max-width:300px;}
+.footer-col-title{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:16px;}
+.footer-links{list-style:none;margin:0;padding:0;}
+.footer-link{padding:5px 0;font-size:13px;color:rgba(255,255,255,.6);transition:color .2s;display:block;text-decoration:none;}
+.footer-link:hover{color:var(--teal2);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-legal{font-size:12px;color:rgba(255,255,255,.3);}
+.footer-badge{font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);opacity:.7;}
+@media(max-width:1024px){.footer-top{grid-template-columns:1fr 1fr;}}
+@media(max-width:768px){.footer-top{grid-template-columns:1fr;}}
+
+/* REASSURANCE BRIDGE */
+.reassurance{max-width:880px;margin:56px auto 0;padding:30px 36px;background:var(--off-white);border-left:4px solid var(--teal);border-radius:0 12px 12px 0;}
+.reassurance-lead{font-size:20px;font-weight:700;color:var(--navy);line-height:1.45;letter-spacing:-.015em;margin-bottom:10px;}
+.reassurance-body{font-size:15px;color:var(--gray-dark);line-height:1.72;}
+
+/* GLOSSARY */
+.glossary-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.glossary-item{background:var(--white);border:1px solid var(--gray);border-radius:10px;padding:18px 22px;display:grid;grid-template-columns:72px 1fr;gap:18px;align-items:start;}
+.glossary-term{font-size:14px;font-weight:800;color:var(--teal);letter-spacing:.06em;padding-top:1px;}
+.glossary-def{font-size:13px;color:var(--gray-dark);line-height:1.6;}
+.glossary-def strong{color:var(--navy);font-weight:700;}
+@media(max-width:768px){.glossary-grid{grid-template-columns:1fr;} .glossary-item{grid-template-columns:64px 1fr;}}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/nutrad-logo.jpg" alt="nutrād" style="height:32px;width:auto;"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <span class="nav-logo-text" style="display:none;">nutr<span>ā</span>d</span>
+    </a>
+    <div class="nav-links">
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="solutions.html" class="nav-link">Solutions</a>
+      <a href="use-cases.html" class="nav-link">Use Cases</a>
+      <a href="advisory.html" class="nav-link">Advisory</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="audit.html" class="nav-cta">Request a Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-accent"></div>
+      <div class="hero-label">Product Data Orchestration</div>
+      <h1 class="hero-title">Commerce-ready product data.<br><span class="teal">Sell more products.<br>In more places.<br>Faster.</span></h1>
+      <p class="hero-sub">Your product data lives in your ERP, your spreadsheets, and a dozen other places. nutrād brings it together, enriches it with AI, and delivers it everywhere your buyers look, including the AI answer engines they consult before they ever reach you.</p>
+      <div class="hero-cta-row">
+        <a href="audit.html" class="btn-primary">Get a Product Data Audit</a>
+        <button type="button" class="btn-aeo" id="aeoOpenBtn">Check Your AEO Index</button>
+      </div>
+      <div class="audit-proof"><span class="proof-dot dot-teal"></span><strong>100 SKUs. 48 hours. No commitment.</strong> See what is broken, what it is costing you, and what nutrād can fix.</div>
+      <div class="aeo-proof-2"><span class="proof-dot dot-coral"></span><strong>Your domain. Two minutes. No data extract.</strong> See where you stand when AI answers for your buyers.</div>
+      <a href="#how-it-works" class="hero-quiet" onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'});return false;">See how it works &darr;</a>
+    </div>
+
+    <!-- Previous hero visual panel retained for future recall.
+    <div class="hero-panel" aria-label="Product data orchestration flow">
+      <div class="panel-label">From product-ready to commerce-ready</div>
+      <div class="engine-visual" aria-label="Intelligent Product Data Fabric four-engine model">
+        <div class="engine-boxes">
+          <div class="engine-box e-connect">Connect</div>
+          <div class="engine-box e-harmonize">Harmonize</div>
+          <div class="engine-box e-execute">Execute</div>
+          <div class="engine-box e-monitor">Monitor</div>
+        </div>
+        <div class="engine-tie-bar">Intelligent Product Data Fabric&trade;</div>
+      </div>
+      <div class="fabric-flow" aria-label="Sources become governed records that move to channels">
+        <div class="fabric-node">
+          <div class="fabric-icon">&darr;</div>
+          <div class="fabric-node-title">Sources</div>
+          <div class="fabric-node-detail">ERP &middot; PIM &middot; DAM &middot; supplier files</div>
+        </div>
+        <div class="fabric-arrow" aria-hidden="true"></div>
+        <div class="fabric-node primary">
+          <div class="fabric-icon">&#10022;</div>
+          <div class="fabric-node-title">AI-governed record</div>
+          <div class="fabric-node-detail">validated &middot; enriched &middot; channel-ready</div>
+        </div>
+        <div class="fabric-arrow" aria-hidden="true"></div>
+        <div class="fabric-node">
+          <div class="fabric-icon">&nearr;</div>
+          <div class="fabric-node-title">Channels</div>
+          <div class="fabric-node-detail">retailers &middot; distributors &middot; marketplaces &middot; EDI</div>
+        </div>
+      </div>
+      <div class="panel-result">
+        <div class="panel-result-title">The commercial outcome</div>
+        <div class="panel-result-body">More products launched, listed, accepted, and sold across more channels.</div>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- PRODUCT DATA ORCHESTRATION CYCLE -->
+<section class="cycle-image-section" aria-label="Product Data Orchestration cycle">
+  <div class="section-inner">
+    <h2 class="cycle-image-title">Beautiful product. Invisible chaos.</h2>
+    <p class="cycle-image-sub">nutrād turns fragmented, conflicting product data into commerce-ready records that can move wherever they need to go.</p>
+    <div class="cycle-experience">
+      <div class="cycle-media">
+        <div class="cycle-stage" aria-live="polite">
+          <div class="cycle-slide active" data-cycle-slide="0">
+            <img class="cycle-image" src="assets/images/cycle-product-data-orchestration.png" alt="Detailed product data view before orchestration">
+          </div>
+          <div class="cycle-slide" data-cycle-slide="1">
+            <img class="cycle-image" src="assets/images/cycle-product-data-before.png" alt="Product data conflicts and channel blockers before orchestration">
+          </div>
+          <div class="cycle-slide" data-cycle-slide="2">
+            <img class="cycle-image" src="assets/images/cycle-product-data-after.png" alt="Harmonized product data with channels activated after orchestration">
+          </div>
+        </div>
+        <div class="cycle-caption-row">
+          <div class="cycle-caption active" data-cycle-caption="0">
+            <strong>The product is ready. But what about the data?</strong>
+            <span>A product that looks ready to sell.</span>
+          </div>
+          <div class="cycle-caption" data-cycle-caption="1">
+            <strong>What your teams manage</strong>
+            <span>Conflicting sources, missing attributes, channel risk, and manual fixes.</span>
+          </div>
+          <div class="cycle-caption" data-cycle-caption="2">
+            <strong>What nutrād makes possible</strong>
+            <span>Harmonized data, resolved conflicts, activated channels, and protected revenue.</span>
+          </div>
+        </div>
+      </div>
+      <div class="cycle-steps" role="tablist" aria-label="Product data orchestration transition">
+        <button class="cycle-step active" type="button" data-cycle-step="0" role="tab" aria-selected="true">
+          <span class="cycle-step-kicker">1</span>
+          <span class="cycle-step-label">Beautiful product</span>
+        </button>
+        <button class="cycle-step" type="button" data-cycle-step="1" role="tab" aria-selected="false">
+          <span class="cycle-step-kicker">2</span>
+          <span class="cycle-step-label">Invisible chaos</span>
+        </button>
+        <button class="cycle-step" type="button" data-cycle-step="2" role="tab" aria-selected="false">
+          <span class="cycle-step-kicker">3</span>
+          <span class="cycle-step-label">Commerce-ready data</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="problem-grid">
+      <div class="reveal">
+        <div class="section-eyebrow">The Problem</div>
+        <div class="problem-statement">Product data was never built to move this fast.</div>
+        <p class="problem-body">Your ERP (the system of record for items, orders, and inventory) has the item master. Your spreadsheets have the specs. Your PIM (the product catalog system) has some of the content. Your DAM (where images and brand assets live) has the assets. Your suppliers send files in different formats. Your retailers, distributors, marketplaces, and EDI (the transaction layer between trading partners) partners each want something different.</p>
+        <p class="problem-body">The result is predictable: delayed launches, rejected listings, manual rework, chargebacks, incomplete product pages, and teams that spend more time fixing product data than using it to grow revenue.</p>
+      </div>
+      <div class="problem-cards">
+        <div class="section-eyebrow reveal" style="grid-column:1/-1;margin-bottom:-4px;">Three faces of the same problem</div>
+        <div class="problem-card reveal reveal-d1">
+          <h3 class="problem-card-title">Data lives everywhere</h3>
+          <p class="problem-card-body">ERP, spreadsheets, PIMs, DAMs, supplier files, portals, PDFs, and EDI feeds all hold pieces of product truth — but no one sees the whole picture.</p>
+        </div>
+        <div class="problem-card reveal reveal-d2">
+          <h3 class="problem-card-title">Every channel has different rules</h3>
+          <p class="problem-card-body">From retail marketplaces and distributor portals to GDSN pools, foodservice networks, healthcare channels, and B2B commerce systems, every destination requires different schemas, attributes, images, validations, certifications, and formats.</p>
+        </div>
+        <div class="problem-card reveal reveal-d3">
+          <h3 class="problem-card-title">Manual work does not scale</h3>
+          <p class="problem-card-body">Product teams, ecommerce teams, sales ops, and inside sales end up cleaning, mapping, enriching, and reformatting the same data again and again.</p>
+        </div>
+      </div>
+    </div>
+    <div class="reassurance reveal">
+      <p class="reassurance-lead">If this sounds familiar, you are not alone.</p>
+      <p class="reassurance-body">Every manufacturer and distributor we talk to is living some version of this. That is the reason nutrād exists: to take the layer between your systems and your channels off your team's plate, so your products move when commerce moves.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENCHMARKS -->
+<section class="section section-navy">
+  <div class="section-inner">
+    <div class="section-centered reveal" style="margin-bottom:46px;">
+      <div class="section-eyebrow">Why It Matters Now</div>
+      <h2 class="section-title section-title--light">Product data is now commercial infrastructure.</h2>
+      <p class="section-sub section-sub--light">Digital commerce, marketplace discovery, direct-to-retail execution, and AI-powered search all depend on accurate, complete, structured product data.</p>
+    </div>
+    <div class="benchmark-grid">
+      <div class="benchmark-cell reveal">
+        <div class="benchmark-num">86%</div>
+        <div class="benchmark-label">of consumers are unlikely to buy from a brand after inaccurate product information.</div>
+        <div class="benchmark-source">GS1 US</div>
+      </div>
+      <div class="benchmark-cell reveal reveal-d1">
+        <div class="benchmark-num">$12.9M</div>
+        <div class="benchmark-label">average annual organizational cost attributed to poor data quality.</div>
+        <div class="benchmark-source">Gartner</div>
+      </div>
+      <div class="benchmark-cell reveal reveal-d2">
+        <div class="benchmark-num">39%</div>
+        <div class="benchmark-label">of B2B buyers are willing to spend more than $500K through digital or remote channels.</div>
+        <div class="benchmark-source">McKinsey / DC360</div>
+      </div>
+      <div class="benchmark-cell reveal reveal-d3">
+        <div class="benchmark-num">4,700%</div>
+        <div class="benchmark-label">year-over-year growth in generative-AI-driven traffic to U.S. retail sites in July 2025.</div>
+        <div class="benchmark-source">Adobe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY NOT LEGACY -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="compare-wrap">
+      <div class="reveal">
+        <div class="section-eyebrow">The Missing Layer</div>
+        <h2 class="section-title">PIMs manage product data. nutrād orchestrates it.</h2>
+        <p class="section-sub">ERP handles the item master. PIM manages the catalog. Syndication distributes content. EDI moves transactions. Each system solves a piece — and none of them solves the layer between them.</p>
+        <p class="problem-body">nutrād orchestrates that layer. It connects every source of product truth, harmonizes it with AI, validates it against channel requirements, executes it to commercial destinations, and monitors performance in real time.</p>
+        <img class="missing-layer-image" src="assets/images/Nutrad fabric concept.png" alt="nutrād AI connects fragmented product data into governed commercial destinations">
+      </div>
+      <div class="compare-grid reveal reveal-d2">
+        <div class="compare-card">
+          <div class="compare-label">ERP</div>
+          <div class="compare-title">Stores item and operational data</div>
+          <div class="compare-desc">But it is not built for rich, channel-ready product content.</div>
+        </div>
+        <div class="compare-card">
+          <div class="compare-label">PIM</div>
+          <div class="compare-title">Manages product content in a catalog</div>
+          <div class="compare-desc">But often does not govern upstream conflicts or execute commercially.</div>
+        </div>
+        <div class="compare-card">
+          <div class="compare-label">Syndication</div>
+          <div class="compare-title">Sends content to channels</div>
+          <div class="compare-desc">But distributes what it receives, even when data is incomplete or conflicted.</div>
+        </div>
+        <div class="compare-card">
+          <div class="compare-label">EDI</div>
+          <div class="compare-title">Executes transactions</div>
+          <div class="compare-desc">But does not solve product data harmonization or channel readiness.</div>
+        </div>
+        <div class="compare-card highlight">
+          <div class="compare-label">nutrād</div>
+          <div class="compare-title">Orchestrates product data commercially</div>
+          <div class="compare-desc">Connects, harmonizes, executes, and monitors product data across the full ecosystem — without rip-and-replace.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR PILLARS -->
+<section class="section section-gray" id="how-it-works">
+  <div class="section-inner">
+    <div class="section-centered reveal" style="margin-bottom:48px;">
+      <div class="section-eyebrow">The Intelligent Product Data Fabric&trade;</div>
+      <h2 class="section-title">Connect. Harmonize. Execute. Monitor.</h2>
+      <p class="section-sub">nutrād turns fragmented product data into commercially ready product records — accurate enough for the product page, compliant enough for the retailer, structured enough for EDI, and complete enough for AI-powered discovery.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal">
+        <div class="pillar-num">Engine 01</div>
+        <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="7" x2="21" y2="7" stroke="#217ec3" stroke-width="1.8" stroke-linecap="round"/><line x1="7" y1="7" x2="14" y2="21" stroke="#217ec3" stroke-width="1.8" stroke-linecap="round"/><line x1="21" y1="7" x2="14" y2="21" stroke="#217ec3" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="7" r="2.8" fill="#217ec3"/><circle cx="21" cy="7" r="2.8" fill="#217ec3"/><circle cx="14" cy="21" r="2.8" fill="#217ec3"/></svg></div>
+        <h3 class="pillar-title">Connect</h3>
+        <p class="pillar-body">Bring together product data from ERP, PIM, DAM, supplier feeds, spreadsheets, EDI, and channel systems.</p>
+      </div>
+      <div class="pillar-card reveal reveal-d1">
+        <div class="pillar-num">Engine 02</div>
+        <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M 3 6 Q 7 2 11 6 T 19 6 T 25 6" stroke="#217ec3" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.4"/><path d="M 3 14 Q 7 11 11 14 T 19 14 T 25 14" stroke="#217ec3" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.7"/><line x1="3" y1="22" x2="25" y2="22" stroke="#217ec3" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="pillar-title">Harmonize</h3>
+        <p class="pillar-body">Use AI to resolve conflicts, normalize supplier data, enrich missing attributes, map taxonomies, and preserve lineage.</p>
+      </div>
+      <div class="pillar-card reveal reveal-d2">
+        <div class="pillar-num">Engine 03</div>
+        <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="11" stroke="#217ec3" stroke-width="1.8" fill="none"/><path d="M 11.5 9 L 19 14 L 11.5 19 Z" fill="#217ec3"/></svg></div>
+        <h3 class="pillar-title">Execute</h3>
+        <p class="pillar-body">Publish governed records to retailer portals, distributor systems, marketplaces, GDSN pools, and EDI trading partners.</p>
+      </div>
+      <div class="pillar-card reveal reveal-d3">
+        <div class="pillar-num">Engine 04</div>
+        <div class="pillar-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M 4 4 L 4 22 L 24 22" stroke="#217ec3" stroke-width="1.6" stroke-linecap="round" opacity="0.45" fill="none"/><path d="M 7 17 L 12 12 L 16 14 L 21 7" stroke="#217ec3" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="1.8" fill="#217ec3"/><circle cx="12" cy="12" r="1.8" fill="#217ec3"/><circle cx="16" cy="14" r="1.8" fill="#217ec3"/><circle cx="21" cy="7" r="1.8" fill="#217ec3"/></svg></div>
+        <h3 class="pillar-title">Monitor</h3>
+        <p class="pillar-body">Track completeness, compliance, channel readiness, revenue at risk, and trading partner feedback before issues become losses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATED IMPACT -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-centered reveal" style="margin-bottom:48px;">
+      <div class="section-eyebrow">Estimated Impact</div>
+      <h2 class="section-title">What improves when product data is orchestrated.</h2>
+      <p class="section-sub">Based on nutrād benchmarks, customer work, and internal research, product data orchestration can materially reduce the manual effort, delays, and quality issues that keep products from reaching channels quickly.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card reveal">
+        <div class="impact-num">85%</div>
+        <div class="impact-label">reduction in trading partner onboarding time</div>
+      </div>
+      <div class="impact-card reveal reveal-d1">
+        <div class="impact-num">Weeks &rarr; Days</div>
+        <div class="impact-label">time-to-channel for new product launches</div>
+      </div>
+      <div class="impact-card reveal reveal-d2">
+        <div class="impact-num">95%+</div>
+        <div class="impact-label">achievable data accuracy after implementation</div>
+      </div>
+      <div class="impact-card reveal reveal-d3">
+        <div class="impact-num">80%</div>
+        <div class="impact-label">decrease in manual data entry and rework</div>
+      </div>
+    </div>
+    <p class="impact-note reveal">Estimated improvements based on nutrād benchmarks and research. Results vary by data quality, source systems, channel complexity, and implementation scope.</p>
+  </div>
+</section>
+
+<!-- ICP PATHWAYS -->
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-centered reveal" style="margin-bottom:48px;">
+      <div class="section-eyebrow">Find Your Path</div>
+      <h2 class="section-title">Built for the product data problems your team is actually living.</h2>
+      <p class="section-sub">Different buyers feel the same product data problem in different ways. nutrād gives each team a clear entry point.</p>
+    </div>
+
+    <div class="icp-grid">
+      <div class="icp-card icp-light reveal">
+        <div class="icp-tag">Manufacturer / Distributor</div>
+        <h3 class="icp-title">Still running product data through ERP and spreadsheets?</h3>
+        <p class="icp-body">Connect your ERP, clean up the spreadsheet chaos, enrich missing product attributes, and get products channel-ready without hiring a data team.</p>
+        <ul class="icp-outcomes">
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Fix fragmented ERP + Excel workflows</li>
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Reduce manual catalog work</li>
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Launch products and channels faster</li>
+        </ul>
+        <a href="solutions.html#manufacturer" class="btn-link">Fix the ERP + spreadsheet problem &rarr;</a>
+      </div>
+
+      <div class="icp-card icp-dark reveal reveal-d1">
+        <div class="icp-tag">Retailer Channel Excellence</div>
+        <h3 class="icp-title">Going direct to a retailer or industrial channel?</h3>
+        <p class="icp-body">Replace the manual content, schema, and EDI burden your distributor used to absorb. Harmonize product data across systems, then execute product content and EDI commerce in one platform.</p>
+        <ul class="icp-outcomes">
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Score readiness against retailer requirements</li>
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Execute product data + EDI together</li>
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Monitor compliance before chargebacks</li>
+        </ul>
+        <a href="solutions.html#retail-channel" class="btn-link">Assess retailer channel readiness &rarr;</a>
+      </div>
+
+      <div class="icp-card icp-mid reveal reveal-d2">
+        <div class="icp-tag">PIM Intelligence Layer</div>
+        <h3 class="icp-title">Have a PIM but still doing manual enrichment?</h3>
+        <p class="icp-body">Keep the catalog investment you already made. Add the AI intelligence layer that resolves upstream conflicts, fills gaps, scores channel readiness, and makes your PIM output more reliable.</p>
+        <ul class="icp-outcomes">
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Add intelligence without rip-and-replace</li>
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Fill enrichment and taxonomy gaps</li>
+          <li class="icp-outcome"><span class="icp-check">&check;</span>Govern data before syndication</li>
+        </ul>
+        <a href="solutions.html#pim-layer" class="btn-link">Find your PIM intelligence gap &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIT -->
+<section class="section section-gray" id="audit">
+  <div class="section-inner">
+    <div class="audit-wrap">
+      <div class="reveal">
+        <div class="section-eyebrow">Product Data Audit</div>
+        <h2 class="audit-title">See what your product data is costing you before you buy anything.</h2>
+        <p class="audit-body">Send us a sample from your ERP, PIM, or current product data export. In 48 hours, nutrād returns a prioritized view of where data gaps, conflicts, missing attributes, taxonomy issues, and channel-readiness problems are creating commercial risk.</p>
+        <div class="audit-cta-row">
+          <a href="audit.html" class="btn-primary">Start a Product Data Audit</a>
+          <a href="solutions.html" class="btn-outline-dark">Explore Solutions</a>
+        </div>
+      </div>
+      <div class="audit-card reveal reveal-d2">
+        <div class="audit-card-title">Sample audit dimensions</div>
+        <div class="audit-dim">
+          <div class="audit-dim-info">
+            <div class="audit-dim-name">Completeness gaps</div>
+            <div class="audit-dim-bar"><div class="audit-dim-fill" style="width:63%"></div></div>
+          </div>
+          <div class="audit-dim-score">63%</div>
+        </div>
+        <div class="audit-dim">
+          <div class="audit-dim-info">
+            <div class="audit-dim-name">Conflicting values across systems</div>
+            <div class="audit-dim-bar"><div class="audit-dim-fill" style="width:41%"></div></div>
+          </div>
+          <div class="audit-dim-score">41%</div>
+        </div>
+        <div class="audit-dim">
+          <div class="audit-dim-info">
+            <div class="audit-dim-name">Channel-readiness gaps</div>
+            <div class="audit-dim-bar"><div class="audit-dim-fill" style="width:58%"></div></div>
+          </div>
+          <div class="audit-dim-score">58%</div>
+        </div>
+        <div class="audit-dim">
+          <div class="audit-dim-info">
+            <div class="audit-dim-name">Taxonomy and classification issues</div>
+            <div class="audit-dim-bar"><div class="audit-dim-fill" style="width:34%"></div></div>
+          </div>
+          <div class="audit-dim-score">34%</div>
+        </div>
+        <div class="audit-dim">
+          <div class="audit-dim-info">
+            <div class="audit-dim-name">AI enrichment opportunities</div>
+            <div class="audit-dim-bar"><div class="audit-dim-fill" style="width:72%"></div></div>
+          </div>
+          <div class="audit-dim-score">72%</div>
+        </div>
+        <div class="audit-note">Illustrative sample output. Your audit uses your actual data.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY EDUCATION -->
+<section class="section section-navy">
+  <div class="section-inner">
+    <div class="section-centered reveal" style="margin-bottom:34px;">
+      <div class="section-eyebrow">Category Education</div>
+      <h2 class="section-title section-title--light">What is Product Data Orchestration?</h2>
+    </div>
+    <div class="category-box reveal reveal-d1">
+      <div class="category-definition">Product Data Orchestration is how products become ready to sell.</div>
+      <p class="category-copy">nutrād&rsquo;s Intelligent Product Data Fabric&trade; is a Product Data Orchestration platform that connects scattered product information, improves it with AI, and sends complete, governed records to every retailer, distributor, marketplace, EDI partner, and commerce system that needs them.</p>
+      <p class="category-copy">It is not another PIM or ERP. It is the intelligent layer that helps more products get listed, accepted, and sold faster.</p>
+      <div class="category-list">
+        <div class="category-item"><strong>Governed source</strong>Know which product record is trusted, current, and complete.</div>
+        <div class="category-item"><strong>Continuous validation</strong>Check data against channel, retailer, and commercial requirements before submission.</div>
+        <div class="category-item"><strong>AI-native enrichment</strong>Fill gaps, map taxonomies, resolve conflicts, and preserve lineage.</div>
+        <div class="category-item"><strong>Commercial execution</strong>Move the governed record into channels, trading partners, and EDI workflows.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section class="section section-gray">
+  <div class="section-inner">
+    <div class="section-centered reveal" style="margin-bottom:36px;">
+      <div class="section-eyebrow">Industry Terms</div>
+      <h2 class="section-title">Plain English.</h2>
+      <p class="section-sub">A quick decoder for the acronyms used on this page.</p>
+    </div>
+    <div class="glossary-grid reveal">
+      <div class="glossary-item"><div class="glossary-term">PIM</div><div class="glossary-def"><strong>Product Information Management.</strong> The system that holds your product catalog: descriptions, attributes, images, classifications.</div></div>
+      <div class="glossary-item"><div class="glossary-term">ERP</div><div class="glossary-def"><strong>Enterprise Resource Planning.</strong> The system of record for items, orders, inventory, and operations.</div></div>
+      <div class="glossary-item"><div class="glossary-term">DAM</div><div class="glossary-def"><strong>Digital Asset Management.</strong> Where product images, videos, and brand assets live.</div></div>
+      <div class="glossary-item"><div class="glossary-term">EDI</div><div class="glossary-def"><strong>Electronic Data Interchange.</strong> The transaction standard for sending orders, shipping notices, and invoices between trading partners.</div></div>
+      <div class="glossary-item"><div class="glossary-term">GDSN</div><div class="glossary-def"><strong>Global Data Synchronization Network.</strong> The international product data pool for grocery, foodservice, healthcare, and regulated industries.</div></div>
+      <div class="glossary-item"><div class="glossary-term">SKU</div><div class="glossary-def"><strong>Stock Keeping Unit.</strong> A unique product identifier used inside your business.</div></div>
+      <div class="glossary-item"><div class="glossary-term">GTIN</div><div class="glossary-def"><strong>Global Trade Item Number.</strong> The universal product code (UPC, EAN) that retailers, marketplaces, and trading partners use.</div></div>
+      <div class="glossary-item"><div class="glossary-term">MDM</div><div class="glossary-def"><strong>Master Data Management.</strong> A discipline (and a category of tools) for keeping the definitive version of business records.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-inner reveal">
+    <h2 class="final-title">Before another channel waits, find out what your product data is missing.</h2>
+    <p class="final-body">Send us 100 SKUs from your ERP, PIM, or current product data export. We will show you what is incomplete, inconsistent, non-compliant, and commercially at risk.</p>
+    <a href="audit.html" class="btn-primary">Get a Product Data Audit</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="assets/images/nutrad-logo.jpg" alt="nutrād">
+        </a>
+        <p class="footer-tagline">The Intelligent Product Data Fabric&trade; for companies ready to make product data commerce-ready.</p>
+        <a href="mailto:hello@nutrad.io" class="footer-link" style="font-size:13px;color:rgba(255,255,255,.45);">hello@nutrad.io</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Platform</div>
+        <ul class="footer-links">
+          <li><a href="products.html#connect" class="footer-link">Connect Engine</a></li>
+          <li><a href="products.html#harmonize" class="footer-link">Harmonize Engine</a></li>
+          <li><a href="products.html#execute" class="footer-link">Execute Engine</a></li>
+          <li><a href="products.html#monitor" class="footer-link">Monitor Engine</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Solutions</div>
+        <ul class="footer-links">
+          <li><a href="solutions.html#manufacturer" class="footer-link">Manufacturer &amp; Distributor</a></li>
+          <li><a href="solutions.html#retail-channel" class="footer-link">Retailer Channel Excellence</a></li>
+          <li><a href="solutions.html#pim-layer" class="footer-link">PIM Intelligence Layer</a></li>
+          <li><a href="use-cases.html" class="footer-link">Use Case Explorer</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="advisory.html" class="footer-link">Advisory</a></li>
+          <li><a href="resources.html" class="footer-link">Resources</a></li>
+          <li><a href="about.html#contact" class="footer-link">Contact Us</a></li>
+          <li><a href="audit.html" class="footer-link">Product Data Audit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-legal">&copy; 2026 nutrād Inc. All rights reserved.</span>
+      <span class="footer-badge">Product Data Orchestration</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+const cycleSteps = document.querySelectorAll('.cycle-step');
+const cycleSlides = document.querySelectorAll('.cycle-slide');
+const cycleCaptions = document.querySelectorAll('.cycle-caption');
+let cycleTimer;
+
+function showCycleStep(index) {
+  cycleSteps.forEach((step, i) => {
+    const active = i === index;
+    step.classList.toggle('active', active);
+    step.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+  cycleSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  cycleCaptions.forEach((caption, i) => {
+    caption.classList.toggle('active', i === index);
+  });
+}
+
+function startCycleStory() {
+  if (!cycleSteps.length || !cycleSlides.length) return;
+  clearTimeout(cycleTimer);
+  showCycleStep(0);
+  cycleTimer = setTimeout(() => {
+    showCycleStep(1);
+    cycleTimer = setTimeout(() => {
+      showCycleStep(2);
+    }, 5000);
+  }, 3000);
+}
+
+cycleSteps.forEach((step) => {
+  step.addEventListener('click', () => {
+    clearTimeout(cycleTimer);
+    showCycleStep(Number(step.dataset.cycleStep));
+  });
+});
+
+startCycleStory();
+
+const auditObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.querySelectorAll('.audit-dim-fill').forEach((bar,i)=>{
+        setTimeout(()=>bar.classList.add('animated'), i*120);
+      });
+      auditObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:0.4});
+document.querySelectorAll('.audit-card').forEach(el=>auditObserver.observe(el));
+</script>
+
+<!-- ===== AEO INDEX MODAL (mockup) ===== -->
+<div class="aeo-overlay" id="aeoModal" role="dialog" aria-modal="true" aria-label="Check your AEO Index">
+  <div class="aeo-modal">
+    <button type="button" class="aeo-close" id="aeoCloseBtn" aria-label="Close">&times;</button>
+
+    <div class="aeo-stage">
+      <div class="aeo-eyebrow">AEO Index</div>
+      <h3 class="aeo-title">Where do you stand when AI answers for you?</h3>
+      <p class="aeo-subtext">Enter your domain. We run the check and send your AEO Index report.</p>
+      <form id="aeoForm">
+        <div class="aeo-field">
+          <label for="aeoDomain">Company domain</label>
+          <input type="text" id="aeoDomain" placeholder="yourbrand.com" autocomplete="off">
+        </div>
+        <div class="aeo-field">
+          <label for="aeoEmail">Work email</label>
+          <input type="email" id="aeoEmail" placeholder="you@yourbrand.com" autocomplete="off">
+        </div>
+        <button type="submit" class="aeo-run">Run the Check</button>
+      </form>
+      <p class="aeo-fine">One live check per domain per week. Two minutes. No data extract.</p>
+    </div>
+
+    <div class="aeo-stage" style="display:none;">
+      <div class="aeo-eyebrow">Preliminary signal</div>
+      <h3 class="aeo-title">Checking <span class="aeo-domain-echo">yourbrand.com</span></h3>
+      <div class="aeo-checks">
+        <div class="aeo-check-row"><span class="aeo-check-name">Schema.org product markup</span><span class="aeo-check-status"></span></div>
+        <div class="aeo-check-row"><span class="aeo-check-name">Product pages discoverable</span><span class="aeo-check-status"></span></div>
+        <div class="aeo-check-row"><span class="aeo-check-name">Answer-engine recognition</span><span class="aeo-check-status"></span></div>
+      </div>
+      <p class="aeo-fine">Live checks against public product data. The full Index runs deeper sampling.</p>
+    </div>
+
+    <div class="aeo-stage" style="display:none;">
+      <div class="aeo-eyebrow">Check complete</div>
+      <h3 class="aeo-title">Your AEO Index report is on its way.</h3>
+      <p class="aeo-subtext">Full report for <strong class="aeo-domain-echo">yourbrand.com</strong> arrives at <strong id="aeoEmailEcho">your inbox</strong> within one business day: your Index number and tier, engine-by-engine citation presence, and your top three fix opportunities.</p>
+      <div class="aeo-scale">
+        <div class="aeo-scale-bar"><span style="opacity:.25"></span><span style="opacity:.42"></span><span style="opacity:.6"></span><span style="opacity:.78"></span><span style="opacity:1"></span></div>
+        <div class="aeo-scale-labels"><span>Below</span><span>Baseline</span><span>Established</span><span>Authoritative</span><span>Definitive</span></div>
+      </div>
+      <button type="button" class="aeo-run" id="aeoDoneBtn">Done</button>
+    </div>
+  </div>
+</div>
+
+<div class="mock-badge">MOCKUP &middot; AEO HERO CTA &middot; NOT LIVE</div>
+
+<script>
+(function(){
+  var modal=document.getElementById('aeoModal');
+  var stages=Array.prototype.slice.call(document.querySelectorAll('.aeo-stage'));
+  function show(n){stages.forEach(function(s,i){s.style.display=(i===n)?'block':'none';});}
+  function open(){modal.classList.add('open');show(0);document.body.style.overflow='hidden';}
+  function close(){modal.classList.remove('open');document.body.style.overflow='';}
+  document.getElementById('aeoOpenBtn').addEventListener('click',open);
+  document.getElementById('aeoCloseBtn').addEventListener('click',close);
+  document.getElementById('aeoDoneBtn').addEventListener('click',close);
+  modal.addEventListener('click',function(e){if(e.target===modal)close();});
+  document.getElementById('aeoForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var domain=document.getElementById('aeoDomain').value.trim()||'yourbrand.com';
+    var email=document.getElementById('aeoEmail').value.trim()||'your inbox';
+    domain=domain.replace(/^https?:\/\//,'').replace(/\/.*$/,'');
+    Array.prototype.forEach.call(document.querySelectorAll('.aeo-domain-echo'),function(el){el.textContent=domain;});
+    document.getElementById('aeoEmailEcho').textContent=email;
+    show(1);
+    var rows=Array.prototype.slice.call(document.querySelectorAll('.aeo-check-row'));
+    var results=['Found','14 pages indexed','2 of 4 engines'];
+    rows.forEach(function(r){r.querySelector('.aeo-check-status').innerHTML='<span class="aeo-spin"></span>';});
+    rows.forEach(function(r,i){
+      setTimeout(function(){r.querySelector('.aeo-check-status').innerHTML='<span class="aeo-ok">&check;</span>'+results[i];},1000+i*950);
+    });
+    setTimeout(function(){show(2);},1000+rows.length*950+700);
+  });
+})();
+</script>
+</body>
+</html>
