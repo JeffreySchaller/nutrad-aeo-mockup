@@ -93,7 +93,7 @@ strong{font-weight:800;color:inherit;}
 .hero-quiet:hover{color:var(--white);}
 .aeo-overlay{position:fixed;inset:0;background:rgba(6,23,46,.68);backdrop-filter:blur(5px);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;}
 .aeo-overlay.open{display:flex;}
-.aeo-modal{background:var(--white);border-radius:18px;max-width:480px;width:100%;padding:40px 42px 34px;box-shadow:0 30px 90px rgba(0,0,0,.35);position:relative;overflow:hidden;}
+.aeo-modal{background:var(--white);border-radius:18px;max-width:520px;width:100%;padding:40px 42px 34px;box-shadow:0 30px 90px rgba(0,0,0,.35);position:relative;overflow:hidden;}
 .aeo-modal::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:#DE7350;}
 .aeo-close{position:absolute;top:14px;right:18px;background:none;border:none;font-size:26px;line-height:1;color:var(--gray-mid);cursor:pointer;}
 .aeo-close:hover{color:var(--navy);}
@@ -121,6 +121,14 @@ strong{font-weight:800;color:inherit;}
 .aeo-scale-bar span{height:7px;border-radius:3px;background:#DE7350;display:block;}
 .aeo-scale-labels{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;font-size:9.5px;font-weight:700;color:var(--gray-mid);text-align:center;letter-spacing:.02em;}
 .mock-badge{position:fixed;bottom:18px;left:18px;z-index:3000;background:rgba(6,23,46,.92);color:#fff;border:1px solid #DE7350;border-radius:50px;padding:8px 16px;font-size:10.5px;font-weight:800;letter-spacing:.1em;}
+.aeo-consent{display:flex;gap:9px;align-items:flex-start;margin:12px 0 4px;font-size:12px;color:var(--gray-dark);line-height:1.5;cursor:pointer;}
+.aeo-consent input{margin-top:2px;accent-color:#DE7350;flex-shrink:0;}
+.aeo-progress{height:4px;background:var(--gray);border-radius:2px;overflow:hidden;margin:14px 0 4px;}
+.aeo-progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#DE7350,#E89077);transition:width .6s ease;}
+.aeo-flag{color:#C75F3D;font-weight:800;}
+.aeo-good{color:var(--teal-dark);font-weight:800;}
+.aeo-summary{display:none;background:rgba(222,115,80,.08);border:1px solid rgba(222,115,80,.35);border-radius:10px;padding:13px 16px;font-size:12.5px;color:var(--ink);line-height:1.55;margin-top:14px;}
+.aeo-summary strong{color:var(--navy);font-weight:800;}
 @media(max-width:520px){.btn-aeo{width:100%;text-align:center;}.aeo-modal{padding:32px 26px 28px;}}
 
 .hero-panel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px 22px;box-shadow:0 20px 70px rgba(0,0,0,.22);opacity:0;animation:fadeUp .7s ease .62s forwards;backdrop-filter:blur(8px);}
@@ -966,26 +974,32 @@ document.querySelectorAll('.audit-card').forEach(el=>auditObserver.observe(el));
           <label for="aeoEmail">Work email</label>
           <input type="email" id="aeoEmail" placeholder="you@yourbrand.com" autocomplete="off">
         </div>
+        <label class="aeo-consent"><input type="checkbox" id="aeoConsent"><span>Also send practical AEO guidance from nutrād. Occasional, useful, unsubscribe anytime.</span></label>
         <button type="submit" class="aeo-run">Run the Check</button>
       </form>
-      <p class="aeo-fine">One live check per domain per week. Two minutes. No data extract.</p>
+      <p class="aeo-fine">One live check per domain per week. No data extract. The full report lands in your inbox.</p>
     </div>
 
     <div class="aeo-stage" style="display:none;">
       <div class="aeo-eyebrow">Preliminary signal</div>
-      <h3 class="aeo-title">Checking <span class="aeo-domain-echo">yourbrand.com</span></h3>
+      <h3 class="aeo-title">Reading <span class="aeo-domain-echo">yourbrand.com</span> the way AI does</h3>
+      <div class="aeo-progress"><div class="aeo-progress-fill" id="aeoBar"></div></div>
       <div class="aeo-checks">
+        <div class="aeo-check-row"><span class="aeo-check-name">AI crawler access (robots.txt)</span><span class="aeo-check-status"></span></div>
         <div class="aeo-check-row"><span class="aeo-check-name">Schema.org product markup</span><span class="aeo-check-status"></span></div>
-        <div class="aeo-check-row"><span class="aeo-check-name">Product pages discoverable</span><span class="aeo-check-status"></span></div>
+        <div class="aeo-check-row"><span class="aeo-check-name">Required product fields</span><span class="aeo-check-status"></span></div>
+        <div class="aeo-check-row"><span class="aeo-check-name">Page render mode</span><span class="aeo-check-status"></span></div>
+        <div class="aeo-check-row"><span class="aeo-check-name">Catalog discoverability</span><span class="aeo-check-status"></span></div>
         <div class="aeo-check-row"><span class="aeo-check-name">Answer-engine recognition</span><span class="aeo-check-status"></span></div>
       </div>
-      <p class="aeo-fine">Live checks against public product data. The full Index runs deeper sampling.</p>
+      <div class="aeo-summary" id="aeoSummary"><strong>Preliminary signal:</strong> readable by 2 of 4 AI crawlers, with markup gaps on key product fields. <strong>Citation analysis queued</strong> &middot; your full AEO Index report completes the picture.</div>
+      <p class="aeo-fine">Live checks against public product data. Deeper engine sampling runs next.</p>
     </div>
 
     <div class="aeo-stage" style="display:none;">
       <div class="aeo-eyebrow">Check complete</div>
       <h3 class="aeo-title">Your AEO Index report is on its way.</h3>
-      <p class="aeo-subtext">Full report for <strong class="aeo-domain-echo">yourbrand.com</strong> arrives at <strong id="aeoEmailEcho">your inbox</strong> within one business day: your Index number and tier, engine-by-engine citation presence, and your top three fix opportunities.</p>
+      <p class="aeo-subtext">Full report for <strong class="aeo-domain-echo">yourbrand.com</strong> arrives at <strong id="aeoEmailEcho">your inbox</strong> within one business day: your Index number and tier, engine-by-engine citation presence, and your top three fix opportunities. <span id="aeoConsentEcho" style="display:none;">Plus occasional AEO guidance you can act on.</span></p>
       <div class="aeo-scale">
         <div class="aeo-scale-bar"><span style="opacity:.25"></span><span style="opacity:.42"></span><span style="opacity:.6"></span><span style="opacity:.78"></span><span style="opacity:1"></span></div>
         <div class="aeo-scale-labels"><span>Below</span><span>Baseline</span><span>Established</span><span>Authoritative</span><span>Definitive</span></div>
@@ -1001,28 +1015,46 @@ document.querySelectorAll('.audit-card').forEach(el=>auditObserver.observe(el));
 (function(){
   var modal=document.getElementById('aeoModal');
   var stages=Array.prototype.slice.call(document.querySelectorAll('.aeo-stage'));
+  var timers=[];
   function show(n){stages.forEach(function(s,i){s.style.display=(i===n)?'block':'none';});}
+  function later(ms,fn){timers.push(setTimeout(fn,ms));}
+  function clearTimers(){timers.forEach(clearTimeout);timers=[];}
   function open(){modal.classList.add('open');show(0);document.body.style.overflow='hidden';}
-  function close(){modal.classList.remove('open');document.body.style.overflow='';}
+  function close(){modal.classList.remove('open');document.body.style.overflow='';clearTimers();}
   document.getElementById('aeoOpenBtn').addEventListener('click',open);
   document.getElementById('aeoCloseBtn').addEventListener('click',close);
   document.getElementById('aeoDoneBtn').addEventListener('click',close);
   modal.addEventListener('click',function(e){if(e.target===modal)close();});
   document.getElementById('aeoForm').addEventListener('submit',function(e){
     e.preventDefault();
-    var domain=document.getElementById('aeoDomain').value.trim()||'yourbrand.com';
+    clearTimers();
+    var domain=(document.getElementById('aeoDomain').value.trim()||'yourbrand.com').replace(/^https?:\/\//,'').replace(/\/.*$/,'');
     var email=document.getElementById('aeoEmail').value.trim()||'your inbox';
-    domain=domain.replace(/^https?:\/\//,'').replace(/\/.*$/,'');
     Array.prototype.forEach.call(document.querySelectorAll('.aeo-domain-echo'),function(el){el.textContent=domain;});
     document.getElementById('aeoEmailEcho').textContent=email;
-    show(1);
+    document.getElementById('aeoConsentEcho').style.display=document.getElementById('aeoConsent').checked?'inline':'none';
     var rows=Array.prototype.slice.call(document.querySelectorAll('.aeo-check-row'));
-    var results=['Found','14 pages indexed','2 of 4 engines'];
-    rows.forEach(function(r){r.querySelector('.aeo-check-status').innerHTML='<span class="aeo-spin"></span>';});
+    var bar=document.getElementById('aeoBar');
+    var summary=document.getElementById('aeoSummary');
+    rows.forEach(function(r){r.style.opacity='.45';r.querySelector('.aeo-check-status').innerHTML='<span style="color:#8a9ab0;font-size:11.5px;font-style:italic;">queued</span>';});
+    summary.style.display='none';bar.style.width='0%';
+    show(1);
+    var results=[
+      'GPTBot <span class="aeo-good">&#10003;</span> &middot; ClaudeBot <span class="aeo-flag">&#10005;</span>',
+      '<span class="aeo-good">&#10003;</span> 6 of 10 pages',
+      '<span class="aeo-flag">&#9888; GTIN missing</span>',
+      '<span class="aeo-good">&#10003;</span> Server-rendered',
+      '<span class="aeo-good">&#10003;</span> 212 product URLs',
+      '<span class="aeo-flag">2 of 4 engines</span>'
+    ];
+    var starts=[400,4200,8600,13200,17000,22000];
+    var ends=[3800,8200,12800,16600,21500,27500];
     rows.forEach(function(r,i){
-      setTimeout(function(){r.querySelector('.aeo-check-status').innerHTML='<span class="aeo-ok">&check;</span>'+results[i];},1000+i*950);
+      later(starts[i],function(){r.style.opacity='1';r.querySelector('.aeo-check-status').innerHTML='<span class="aeo-spin"></span>';});
+      later(ends[i],function(){r.querySelector('.aeo-check-status').innerHTML=results[i];bar.style.width=Math.round((i+1)/rows.length*100)+'%';});
     });
-    setTimeout(function(){show(2);},1000+rows.length*950+700);
+    later(28300,function(){summary.style.display='block';});
+    later(33500,function(){show(2);});
   });
 })();
 </script>
